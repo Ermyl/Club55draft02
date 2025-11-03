@@ -138,37 +138,49 @@
 
 <!-- LOCATION -->
 <section id="location" class="border-t border-neutral-200 bg-white py-16">
-  <div class="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+  <div class="mx-auto max-w-6xl px-4 space-y-10">
     
-    <!-- Text -->
-    <div>
-      <h2 class="text-2xl font-bold">Location</h2>
-      <p class="mt-3 text-neutral-700">
-        Positioned in a growth corridor between the coast and countryside, Te Horo offers a rare balance of peace and connection.
-        Close to Wellington yet far from the rush, it’s a place for people who value space, nature, and small-town warmth —
-        all within easy reach of family and everyday essentials.
-      </p>
+    <!-- Top grid: text + map -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      
+      <!-- Text -->
+      <div>
+        <h2 class="text-2xl font-bold">Location</h2>
+        <p class="mt-3 text-neutral-700">
+          Positioned between the coast and countryside, Te Horo offers a rare balance of peace and connection. 
+          Close to Wellington yet far from the rush, it’s a place for people who value space, nature, and small-town warmth — 
+          all within easy reach of family and everyday essentials.
+        </p>
 
-      <!-- Feature badges -->
-      <div class="mt-6 flex flex-wrap gap-3">
-        <span class="inline-flex items-center gap-2 rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-700">
-          🌿 Peaceful coastal living
-        </span>
-        <span class="inline-flex items-center gap-2 rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-700">
-          🚗 60 minutes from Wellington
-        </span>
-        <span class="inline-flex items-center gap-2 rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-700">
-          🏞️ Nature, cafés & community
-        </span>
+        <!-- Feature badges -->
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="inline-flex items-center gap-2 rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-700">
+            🌿 Peaceful coastal living
+          </span>
+          <span class="inline-flex items-center gap-2 rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-700">
+            🚗 60 minutes from Wellington
+          </span>
+          <span class="inline-flex items-center gap-2 rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-700">
+            ☕ Nature, cafés & community
+          </span>
+        </div>
+
+        <p class="mt-3 text-xs text-neutral-500">Indicative location map.</p>
       </div>
 
-      <p class="mt-3 text-xs text-neutral-500">Indicative location map.</p>
+      <!-- Map -->
+      <div class="overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-50 shadow-sm">
+        <img src="./location-map.png" alt="Location map showing the Club 55 site within the Te Horo corridor"
+             class="w-full h-auto object-contain">
+      </div>
     </div>
 
-    <!-- Image -->
-    <div class="overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-50 shadow-sm mx-auto max-w-3xl">
-      <img src="./location-map.png" alt="Location map showing the Club 55 site within the corridor"
-           class="w-full h-auto object-contain">
+    <!-- Gallery -->
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <img src="./images/tehoro-land.jpg" alt="Te Horo land site" class="rounded-xl shadow-sm w-full h-64 object-cover">
+      <img src="./images/otaki-river.jpg" alt="River and native forest near Te Horo" class="rounded-xl shadow-sm w-full h-64 object-cover">
+      <img src="./images/otaki-beach.jpg" alt="Ōtaki Beach at sunset" class="rounded-xl shadow-sm w-full h-64 object-cover">
+      <img src="./images/otaki-cafe.jpg" alt="Local cafés and community life" class="rounded-xl shadow-sm w-full h-64 object-cover">
     </div>
 
   </div>
