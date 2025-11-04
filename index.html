@@ -19,57 +19,75 @@
 
 <body class="bg-neutral-50 text-neutral-900">
 
-  <!-- HERO HEADER WITH IMAGE BACKGROUND -->
-  <section class="relative">
-    <!-- Background image -->
-    <img src="./website-older.jpg" alt="Club 55 homes and green spaces"
-         class="absolute inset-0 h-full w-full object-cover">
-    <!-- Overlay for readability -->
-    <div class="absolute inset-0 bg-black/40"></div>
+<!-- HERO + HEADER OVER BACKGROUND -->
+<section class="relative">
+  <!-- Background image (swap the src to your file) -->
+  <img src="./website-older.jpg" alt="Club 55 homes and green spaces"
+       class="absolute inset-0 h-full w-full object-cover">
+  <!-- Dark overlay for readability -->
+  <div class="absolute inset-0 bg-black/40"></div>
 
-    <!-- Header -->
-    <header class="relative z-10">
-      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-        <!-- Logo -->
-        <a href="#" class="flex items-center gap-2">
-          <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-600 text-white font-semibold">55</span>
-          <span class="text-white text-lg font-semibold">Club 55</span>
-        </a>
+  <!-- Header on top of image -->
+  <header class="absolute inset-x-0 top-0 z-10">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-emerald-600 text-white font-semibold">55</span>
+        <span class="text-white text-lg font-semibold">Club 55</span>
+      </a>
 
-        <!-- Navigation -->
-        <nav class="hidden md:flex gap-6 text-sm text-white/90">
-          <a href="#why" class="hover:text-white">Why</a>
-          <a href="#location" class="hover:text-white">Location</a>
-          <a href="#masterplan" class="hover:text-white">Master plan</a>
-          <a href="#sample" class="hover:text-white">Sample home</a>
-          <a href="#status" class="hover:text-white">Where we’re at</a>
-          <a href="#register" class="hover:text-white">Register</a>
-          <a href="#faq" class="hover:text-white">FAQ</a>
-        </nav>
+      <!-- Nav -->
+      <nav class="hidden md:flex gap-6 text-sm text-white/90">
+        <a href="#why" class="hover:text-white">Why</a>
+        <a href="#location" class="hover:text-white">Location</a>
+        <a href="#masterplan" class="hover:text-white">Master plan</a>
+        <a href="#sample" class="hover:text-white">Sample home</a>
+        <a href="#status" class="hover:text-white">Where we’re at</a>
+        <a href="#register" class="hover:text-white">Register</a>
+        <a href="#faq" class="hover:text-white">FAQ</a>
+      </nav>
 
-        <!-- CTA button -->
-        <a href="#register"
-           class="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600">
-          I’m interested
-        </a>
-      </div>
-    </header>
+      <!-- CTA -->
+      <a href="#register"
+         class="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600">
+        I’m interested
+      </a>
+    </div>
+  </header>
 
-    <!-- Hero text -->
-    <div class="relative z-10">
-      <div class="mx-auto max-w-6xl px-4">
-        <div class="min-h-[70vh] flex items-end pb-16">
-          <div class="max-w-2xl">
-            <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tight">Our process</h1>
-            <p class="mt-4 text-white/90 md:text-lg">
-              The unique building strategy behind Club 55 makes freehold homes more attainable,
-              community-driven, and ready for independent living.
-            </p>
+  <!-- Hero copy on top of image -->
+  <div class="relative z-10">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="min-h-[70vh] md:min-h-[80vh] flex items-end pb-16">
+        <div class="max-w-2xl">
+          <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white">
+            Live well. Spend less. <span class="text-emerald-400">Stay independent.</span>
+          </h1>
+
+          <p class="mt-4 text-white/90 md:text-lg">
+            Club 55 is an active retirement community on the Kāpiti Coast — freehold homes at a fair price,
+            shared facilities, and transparent weekly costs in a neighbourhood that feels like home
+          </p>
+
+          <!-- Feature badges (tuned for dark bg) -->
+          <div class="mt-6 flex flex-wrap items-center gap-3 text-sm">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow-sm ring-1 ring-white/40 text-neutral-800">🏠 3,000–4,000 homes planned</span>
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow-sm ring-1 ring-white/40 text-neutral-800">🛡️ Predictable weekly costs</span>
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow-sm ring-1 ring-white/40 text-neutral-800">🌿 Energy-smart design</span>
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow-sm ring-1 ring-white/40 text-neutral-800">🗝️ Freehold ownership</span>
+          </div>
+
+          <!-- Buttons -->
+          <div class="mt-8 flex gap-3">
+            <a href="#register" class="rounded-xl bg-emerald-500 px-5 py-3 font-semibold text-white shadow hover:bg-emerald-600">Register interest</a>
+            <a href="#why" class="rounded-xl bg-white/90 px-5 py-3 font-semibold text-emerald-700 ring-1 ring-emerald-200 hover:bg-white">How it works</a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
 <!-- WHY -->
 <section id="why" class="border-t border-neutral-200 bg-white py-16">
