@@ -19,9 +19,9 @@
 
 <body class="bg-neutral-50 text-neutral-900">
 
-<!-- HERO + HEADER OVER BACKGROUND -->
+<!-- ================= HERO (unchanged height) ================= -->
 <section class="relative">
-  <!-- Background image (swap the src to your file) -->
+  <!-- Background image -->
   <img src="./website-older.jpg" alt="Club 55 homes and green spaces"
        class="absolute inset-0 h-full w-full object-cover">
   <!-- Dark overlay for readability -->
@@ -68,25 +68,59 @@
             Club 55 is an active retirement community on the Kāpiti Coast — freehold homes at a fair price,
             shared facilities, and transparent weekly costs in a neighbourhood that feels like home
           </p>
-
-          <!-- Feature badges (tuned for dark bg) -->
-          <div class="mt-6 flex flex-wrap items-center gap-3 text-sm">
-            <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow-sm ring-1 ring-white/40 text-neutral-800">🏠 3,000–4,000 homes planned</span>
-            <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow-sm ring-1 ring-white/40 text-neutral-800">🛡️ Predictable weekly costs</span>
-            <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow-sm ring-1 ring-white/40 text-neutral-800">🌿 Energy-smart design</span>
-            <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow-sm ring-1 ring-white/40 text-neutral-800">🗝️ Freehold ownership</span>
-          </div>
-
-          <!-- Buttons -->
-          <div class="mt-8 flex gap-3">
-            <a href="#register" class="rounded-xl bg-emerald-500 px-5 py-3 font-semibold text-white shadow hover:bg-emerald-600">Register interest</a>
-            <a href="#why" class="rounded-xl bg-white/90 px-5 py-3 font-semibold text-emerald-700 ring-1 ring-emerald-200 hover:bg-white">How it works</a>
-          </div>
+          <!-- Badges + Buttons REMOVED from hero on purpose -->
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- ============== GREEN TRANSITION STRIP (new) ============== -->
+<section id="intro-strip" class="border-t border-black/10 bg-teal-900 text-white">
+  <div class="mx-auto max-w-6xl px-4 py-10 md:py-14">
+    <!-- Badges -->
+    <div class="flex flex-wrap items-center gap-3 text-sm">
+      <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow-sm ring-1 ring-white/20 text-neutral-800">🏠 3,000–4,000 homes planned</span>
+      <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow-sm ring-1 ring-white/20 text-neutral-800">🛡️ Predictable weekly costs</span>
+      <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow-sm ring-1 ring-white/20 text-neutral-800">🌿 Energy-smart design</span>
+      <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 shadow-sm ring-1 ring-white/20 text-neutral-800">🗝️ Freehold ownership</span>
+    </div>
+
+    <!-- Buttons -->
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="#register" class="rounded-xl bg-emerald-500 px-5 py-3 font-semibold text-white shadow hover:bg-emerald-600">
+        Register interest
+      </a>
+      <a href="#why" class="rounded-xl bg-white/90 px-5 py-3 font-semibold text-teal-900 ring-1 ring-white/30 hover:bg-white">
+        How it works
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= (Next sections continue below as usual) ======= -->
+<!-- Example placeholder for your next section: -->
+<section id="why" class="bg-white border-t border-neutral-200 py-16 md:py-24">
+  <div class="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-4">
+    <div>
+      <h2 class="text-2xl md:text-3xl font-bold">Why Club 55 exists</h2>
+      <p class="mt-4 text-neutral-700">
+        You’ve done the hard work — raised families, paid mortgages, and kept homes running. Now the house feels too big,
+        the upkeep never ends, and “downsizing” sounds like giving something up.
+      </p>
+      <p class="mt-4 text-neutral-700">
+        Club 55 is built for this stage of life — smaller, smarter homes with shared services so you can keep living the way you like.
+      </p>
+    </div>
+    <div class="rounded-2xl overflow-hidden border border-neutral-200">
+      <img src="./face-why.png" alt="Residents at Club 55" class="w-full h-full object-cover">
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
+
 
 
 <!-- WHY -->
