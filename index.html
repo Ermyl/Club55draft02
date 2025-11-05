@@ -398,22 +398,30 @@
   </div>
 </section>
 
-  
-  <footer class="border-t border-neutral-200 bg-white">
-    <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-neutral-600">
-      <div class="flex flex-col justify-between gap-4 md:flex-row md:items-center">
-        <p>© <span id="year"></span> Club 55. All rights reserved.</p>
-        <div class="flex items-center gap-4">
-          <a class="hover:text-neutral-900" href="#register">Contact</a>
-          <a class="hover:text-neutral-900" href="#faq">Privacy</a>
-          <a class="hover:text-neutral-900" href="#why">About</a>
-        </div>
+<!-- FOOTER -->
+<footer class="bg-neutral-900 text-neutral-300 border-t border-neutral-800">
+  <div class="mx-auto max-w-6xl px-4 py-16">
+    
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-white">Register your interest today.</h2>
+      <p class="mt-3 text-neutral-400">
+        Join the list to receive updates and help shape the first Club 55 community.
+      </p>
+      <a href="#register"
+         class="mt-6 inline-block rounded-full bg-emerald-500 px-6 py-3 font-semibold text-white hover:bg-emerald-600">
+        Register interest
+      </a>
+    </div>
+
+    <div class="mt-12 border-t border-neutral-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-500">
+      <p>© 2025 Club 55. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="#contact" class="hover:text-white">Contact</a>
+        <a href="#privacy" class="hover:text-white">Privacy</a>
+        <a href="#about" class="hover:text-white">About</a>
       </div>
     </div>
-  </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+  </div>
+</footer>
+
