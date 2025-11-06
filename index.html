@@ -20,8 +20,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body x-data="{ open: false, imageSrc: '' }" class="bg-neutral-50 text-neutral-900">
-
+<body x-data="{ open: false, imageSrc: '', openPrivacy: false }" class="bg-neutral-50 text-neutral-900">
 
 <!-- ================= HERO (unchanged height) ================= -->
 <section class="relative">
@@ -526,7 +525,7 @@
       <p>© 2025 Club 55. All rights reserved.</p>
       <div class="flex gap-6">
         <a href="#contact" class="hover:text-white">Contact</a>
-        <a href="#privacy" class="hover:text-white">Privacy</a>
+        <a href="#privacy" @click.prevent="openPrivacy = true" class="hover:text-white">Privacy</a>
         <a href="#about" class="hover:text-white">About</a>
       </div>
     </div>
@@ -548,6 +547,30 @@
   >
 </div>
 
+  <!-- Privacy popup -->
+<div 
+  x-show="openPrivacy"
+  x-transition
+  @click.self="openPrivacy = false"
+  class="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+>
+  <div class="bg-white max-w-lg mx-4 rounded-2xl p-6 shadow-lg text-neutral-800 relative">
+    <h2 class="text-2xl font-bold mb-3">Privacy Policy</h2>
+    <p class="text-sm mb-3">
+      We collect only the information you choose to share when registering your interest.
+      This data is used solely for project updates and will never be sold or shared.
+    </p>
+    <p class="text-sm mb-3">
+      To remove your information, email 
+      <a href="mailto:info@i4c.co.nz" class="underline text-emerald-600">info@i4c.co.nz</a>.
+    </p>
+    <p class="text-sm">
+      Click anywhere outside this box to close.
+    </p>
+  </div>
+</div>
+
+  
 </body>
 </html>
 
