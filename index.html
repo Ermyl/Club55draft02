@@ -224,13 +224,15 @@
 
   </div>
 </section>
-
-  <!-- MASTER PLAN -->
+<!-- MASTER PLAN -->
 <section id="masterplan" class="border-t border-neutral-200 bg-neutral-50 py-16">
   <div class="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
     
+    <!-- Title (mobile only) -->
+    <h2 class="text-2xl font-bold block md:hidden mb-4 text-center">Master plan</h2>
+
     <!-- Image -->
-    <div class="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm mx-auto max-w-3xl">
+    <div class="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm mx-auto max-w-3xl order-1 md:order-none">
       <img src="./masterplan.png" alt="Illustrative master plan for Club 55"
            class="w-full h-auto object-contain">
       <p class="mt-2 text-xs text-neutral-500 text-center">Illustrative master plan. Final design may vary.</p>
@@ -238,7 +240,8 @@
 
     <!-- Text -->
     <div>
-      <h2 class="text-2xl font-bold">Master plan</h2>
+      <!-- Title (desktop only) -->
+      <h2 class="text-2xl font-bold hidden md:block">Master plan</h2>
       <p class="mt-3 text-neutral-700">
         A human-scale village where everything’s a short, easy walk. Homes sit on quiet lanes with no-through traffic,
         a central green anchors daily life, and paths connect gardens, the community hub, and shared services.
@@ -259,6 +262,7 @@
       </div>
     </div>
   </div>
+</section>
 
   <!-- LIFESTYLE GALLERY -->
   <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 px-4 max-w-6xl mx-auto">
