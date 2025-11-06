@@ -20,7 +20,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="bg-neutral-50 text-neutral-900">
+<body x-data="{ open: false, imageSrc: '' }" class="bg-neutral-50 text-neutral-900">
 
 
 <!-- ================= HERO (unchanged height) ================= -->
@@ -235,7 +235,13 @@
     
     <!-- Image -->
     <div class="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm mx-auto max-w-3xl order-1 md:order-none">
-      <img src="./masterplan.png" alt="Illustrative master plan for Club 55" class="w-full h-auto object-contain">
+      <img 
+  src="./masterplan.png" 
+  alt="Illustrative master plan for Club 55"
+  class="w-full h-auto object-contain cursor-zoom-in"
+  @click="open = true; imageSrc = './masterplan.png'"
+>
+
       <p class="mt-2 text-xs text-neutral-500 text-center">Illustrative master plan. Final design may vary.</p>
     </div>
 
@@ -528,5 +534,21 @@
   </div>
 </footer>
 
+<!-- Global fullscreen image viewer -->
+<div 
+  x-show="open"
+  x-transition
+  class="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+  @click="open = false"
+>
+  <img 
+    :src="imageSrc"
+    alt="Enlarged image"
+    class="max-h-[90vh] max-w-[90vw] rounded-lg cursor-zoom-out shadow-lg"
+  >
+</div>
+
+</body>
+</html>
 
   
