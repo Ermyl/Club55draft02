@@ -387,56 +387,80 @@
     </div>
   </section>
 
-  <!-- REGISTER -->
-  <section id="register" class="border-t border-neutral-200 bg-white py-16">
-    <div class="mx-auto max-w-6xl px-4">
-      <div class="grid items-center gap-10 md:grid-cols-5">
-        <div class="md:col-span-2">
-          <h2 class="text-2xl font-bold">Be part of the beginning</h2>
-          <p class="mt-3 text-neutral-700">
-            Add your name to help bring Club 55 to life. No payment required — your interest shows demand and helps
-            us move toward approvals.
+ <!-- REGISTER -->
+<section id="register" class="border-t border-neutral-200 bg-white py-16">
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="grid items-center gap-10 md:grid-cols-5">
+      
+      <!-- Left column -->
+      <div class="md:col-span-2">
+        <h2 class="text-2xl font-bold">Be part of the beginning</h2>
+        <p class="mt-3 text-neutral-700">
+          Add your name to help bring Club 55 to life. No payment required — your interest shows demand and helps
+          us move toward approvals.
+        </p>
+        <ul class="mt-4 list-disc space-y-2 pl-6 text-sm text-neutral-700">
+          <li>Your details go directly to our private list (no public display)</li>
+          <li>We’ll email updates and next steps</li>
+        </ul>
+      </div>
+
+      <!-- Right column (form) -->
+      <div class="md:col-span-3">
+        <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
+          <form action="https://YOURPREFIX.usXX.list-manage.com/subscribe/post?u=XXXXXXX&amp;id=YYYYYY" method="post" target="_blank" novalidate class="space-y-4">
+            
+            <div>
+              <label class="mb-1 block text-sm font-medium">Name</label>
+              <input type="text" name="FNAME" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 outline-none ring-emerald-300 focus:ring" placeholder="Jane Doe" required>
+            </div>
+
+            <div>
+              <label class="mb-1 block text-sm font-medium">Email</label>
+              <input type="email" name="EMAIL" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 outline-none ring-emerald-300 focus:ring" placeholder="jane@example.com" required>
+            </div>
+
+            <div>
+              <label class="mb-1 block text-sm font-medium">I’m interested in:</label>
+              <div class="space-y-2">
+                <label class="flex items-center gap-2 text-sm">
+                  <input type="radio" name="INTEREST" value="Joining as a future resident" class="text-emerald-600 focus:ring-emerald-500">
+                  Joining as a future resident
+                </label>
+                <label class="flex items-center gap-2 text-sm">
+                  <input type="radio" name="INTEREST" value="Learning about investment opportunities" class="text-emerald-600 focus:ring-emerald-500">
+                  Learning about investment opportunities
+                </label>
+                <label class="flex items-center gap-2 text-sm">
+                  <input type="radio" name="INTEREST" value="Staying informed with project updates" class="text-emerald-600 focus:ring-emerald-500">
+                  Staying informed with project updates
+                </label>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <p class="text-xs text-neutral-600">By submitting, you agree to be contacted about Club 55 updates.</p>
+              <button type="submit" class="rounded-lg bg-emerald-600 px-5 py-2.5 font-semibold text-white hover:bg-emerald-700">
+                Register interest
+              </button>
+            </div>
+
+            <!-- Mailchimp anti-bot field -->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_fake_bot_field" tabindex="-1" value="">
+            </div>
+          </form>
+          
+          <p class="mt-2 text-xs text-neutral-600">
+            If the form doesn’t load, send us a message at 
+            <a class="underline" href="mailto:info@i4c.co.nz">info@i4c.co.nz</a>.
           </p>
-          <ul class="mt-4 list-disc space-y-2 pl-6 text-sm text-neutral-700">
-            <li>Choose your role: Founding Resident, Supporter, or Partner</li>
-            <li>Your details go directly to our inbox (no public display)</li>
-            <li>We’ll email updates and next steps</li>
-          </ul>
-        </div>
-        <div class="md:col-span-3">
-          <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
-            <form action="mailto:info@i4c.co.nz" method="post" enctype="text/plain" class="space-y-4">
-              <div>
-                <label class="mb-1 block text-sm font-medium">Name</label>
-                <input type="text" name="Name" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 outline-none ring-emerald-300 focus:ring" placeholder="Jane Doe" required>
-              </div>
-              <div>
-                <label class="mb-1 block text-sm font-medium">Email</label>
-                <input type="email" name="Email" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 outline-none ring-emerald-300 focus:ring" placeholder="jane@example.com" required>
-              </div>
-              <div>
-                <label class="mb-1 block text-sm font-medium">I am a…</label>
-                <select name="Role" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 outline-none ring-emerald-300 focus:ring">
-                  <option>Founding Resident</option>
-                  <option>Supporter</option>
-                  <option>Partner</option>
-                </select>
-              </div>
-              <div>
-                <label class="mb-1 block text-sm font-medium">Message (optional)</label>
-                <textarea name="Message" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 outline-none ring-emerald-300 focus:ring" placeholder="Tell us what matters most to you." rows="4"></textarea>
-              </div>
-              <div class="flex items-center justify-between">
-                <p class="text-xs text-neutral-600">By submitting, you agree to be contacted about Club 55 updates.</p>
-                <button type="submit" class="rounded-lg bg-emerald-600 px-5 py-2.5 font-semibold text-white hover:bg-emerald-700">Register interest</button>
-              </div>
-            </form>
-            <p class="mt-2 text-xs text-neutral-600">If the email form doesn’t open on your device, send us a message at <a class="underline" href="mailto:info@i4c.co.nz">info@i4c.co.nz</a>.</p>
-          </div>
         </div>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- FAQ -->
   <section id="faq" class="border-t border-neutral-200 bg-neutral-50 py-16">
