@@ -391,7 +391,7 @@
 <section id="register" class="border-t border-neutral-200 bg-white py-16">
   <div class="mx-auto max-w-6xl px-4">
     <div class="grid items-center gap-10 md:grid-cols-5">
-      
+
       <!-- Left column -->
       <div class="md:col-span-2">
         <h2 class="text-2xl font-bold">Be part of the beginning</h2>
@@ -405,15 +405,47 @@
         </ul>
       </div>
 
-      <!-- Right column (MailerLite embed) -->
+      <!-- Right column (form) -->
       <div class="md:col-span-3">
         <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
-          <iframe 
-            src="https://preview.mailerlite.io/forms/1904608/170363972556424685/share" 
-            style="width:100%; height:500px; border:none;" 
-            title="Club 55 Registration Form" 
-            loading="lazy">
-          </iframe>
+          <form id="club55-form" class="space-y-4" novalidate>
+            <div>
+              <label class="mb-1 block text-sm font-medium">Name</label>
+              <input type="text" name="FNAME" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 outline-none ring-emerald-300 focus:ring" placeholder="Jane Doe">
+            </div>
+
+            <div>
+              <label class="mb-1 block text-sm font-medium">Email</label>
+              <input type="email" name="EMAIL" class="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 outline-none ring-emerald-300 focus:ring" placeholder="jane@example.com" required>
+            </div>
+
+            <div>
+              <label class="mb-1 block text-sm font-medium">I’m interested in:</label>
+              <div class="space-y-2">
+                <label class="flex items-center gap-2 text-sm">
+                  <input type="radio" name="INTEREST" value="Joining as a future resident" required class="text-emerald-600 focus:ring-emerald-500">
+                  Joining as a future resident
+                </label>
+                <label class="flex items-center gap-2 text-sm">
+                  <input type="radio" name="INTEREST" value="Learning about investment opportunities" class="text-emerald-600 focus:ring-emerald-500">
+                  Learning about investment opportunities
+                </label>
+                <label class="flex items-center gap-2 text-sm">
+                  <input type="radio" name="INTEREST" value="Staying informed with project updates" class="text-emerald-600 focus:ring-emerald-500">
+                  Staying informed with project updates
+                </label>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <p class="text-xs text-neutral-600">By submitting, you agree to be contacted about Club 55 updates.</p>
+              <button id="club55-submit" type="submit" class="rounded-lg bg-emerald-600 px-5 py-2.5 font-semibold text-white hover:bg-emerald-700">
+                Register interest
+              </button>
+            </div>
+          </form>
+
+          <p id="club55-error" class="hidden mt-3 text-sm text-red-600">Sorry, something went wrong. Please try again.</p>
           <p class="mt-2 text-xs text-neutral-600">
             If the form doesn’t load, send us a message at 
             <a class="underline" href="mailto:info@i4c.co.nz">info@i4c.co.nz</a>.
@@ -424,6 +456,49 @@
     </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    const form = document.getElementById('club55-form');
+    const btn  = document.getElementById('club55-submit');
+    const err  = document.getElementById('club55-error');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      err.classList.add('hidden');
+
+      const fd = new FormData(form);
+      const name = fd.get('FNAME')?.toString().trim() || '';
+      const email = fd.get('EMAIL')?.toString().trim() || '';
+      const interest = (fd.get('INTEREST') || 'Club55 – website').toString();
+
+      if (!email) { err.textContent = 'Please enter your email.'; err.classList.remove('hidden'); return; }
+
+      btn.disabled = true; btn.classList.add('opacity-70');
+
+      try {
+        const res = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, interest })
+        });
+
+        if (res.ok) {
+          window.location.href = 'https://club55draft02.vercel.app/thank-you';
+        } else {
+          err.textContent = 'Could not save your details. Please try again.'; 
+          err.classList.remove('hidden');
+          btn.disabled = false; btn.classList.remove('opacity-70');
+        }
+      } catch {
+        err.textContent = 'Network error. Please try again.';
+        err.classList.remove('hidden');
+        btn.disabled = false; btn.classList.remove('opacity-70');
+      }
+    });
+  })();
+</script>
+
 
 
 
