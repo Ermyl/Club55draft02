@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,7 @@
 
 <body x-data="{ open: false, imageSrc: '', openPrivacy: false }" class="bg-neutral-50 text-neutral-900">
 
-<!-- ================= HERO (unchanged height) ================= -->
+<!-- ================= HERO ================= -->
 <section class="relative">
   <!-- Background image -->
   <img src="./website-older.jpg" alt="Club 55 homes and green spaces"
@@ -42,11 +42,11 @@
 
       <!-- Nav -->
       <nav class="hidden md:flex gap-6 text-sm text-white/90">
-<a href="#why" class="hover:text-white">Why</a>
+        <a href="#why" class="hover:text-white">Why</a>
         <a href="#location" class="hover:text-white">Location</a>
         <a href="#masterplan" class="hover:text-white">Master plan</a>
-        <a href="#sample-homes" class="hover:text-white">Sample homes</a>
-        <a href="#status" class="hover:text-white">Where we're at</a>
+        <a href="#sample-homes" class="hover:text-white">Sample home</a>
+        <a href="#status" class="hover:text-white">Where we’re at</a>
         <a href="#register" class="hover:text-white">Register</a>
         <a href="#faq" class="hover:text-white">FAQ</a>
       </nav>
@@ -72,15 +72,14 @@
             Club 55 is an active retirement community on the Kāpiti Coast — freehold homes at a fair price,
             shared facilities, and transparent weekly costs in a neighbourhood that feels like home
           </p>
-          <!-- Badges + Buttons REMOVED from hero on purpose -->
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============== GREEN TRANSITION STRIP (refined layout) ============== -->
-<section id="intro-strip" class="border-t border-black/10 bg-teal-900 text-white">
+<!-- ============== GREEN TRANSITION STRIP ============== -->
+<section id="intro-strip" class="scroll-mt-24 border-t border-black/10 bg-teal-900 text-white">
   <div class="mx-auto max-w-6xl px-4 py-10 md:py-14">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       
@@ -114,13 +113,9 @@
   </div>
 </section>
 
-
-
 <!-- WHY -->
-<section id="why" class="border-t border-neutral-200 bg-white py-16">
+<section id="why" class="scroll-mt-24 border-t border-neutral-200 bg-white py-16">
   <div class="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-4">
-    
-    <!-- Text -->
     <div>
       <h2 class="text-2xl font-bold">Why Club 55 exists</h2>
       <p class="mt-4 text-neutral-700">
@@ -133,60 +128,35 @@
       </p>
     </div>
 
-    <!-- Image -->
     <div class="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm">
       <img src="./faces-why.png" alt="Residents enjoying life at Club 55" class="w-full h-auto object-cover">
     </div>
-
   </div>
 
-  <!-- Feature cards -->
   <div class="mx-auto mt-12 max-w-6xl px-4 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-
-    <!-- A life that feels good -->
     <div class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
       <h3 class="font-semibold text-neutral-800">💛 A life that feels good</h3>
-      <p class="mt-2 text-neutral-600 text-sm">
-        Spaces to connect, move, and enjoy.
-      </p>
+      <p class="mt-2 text-neutral-600 text-sm">Spaces to connect, move, and enjoy.</p>
     </div>
-
-    <!-- Predictable weekly costs -->
     <div class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
       <h3 class="font-semibold text-neutral-800">🛡️ Predictable weekly costs</h3>
-      <p class="mt-2 text-neutral-600 text-sm">
-        Shared services for maintenance and common costs to keep life affordable.
-      </p>
+      <p class="mt-2 text-neutral-600 text-sm">Shared services for maintenance and common costs to keep life affordable.</p>
     </div>
-
-    <!-- Energy-smart by design -->
     <div class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
       <h3 class="font-semibold text-neutral-800">🌿 Energy-smart by design</h3>
-      <p class="mt-2 text-neutral-600 text-sm">
-        Insulation, solar options, and simple systems to lower power bills.
-      </p>
+      <p class="mt-2 text-neutral-600 text-sm">Insulation, solar options, and simple systems to lower power bills.</p>
     </div>
-
-    <!-- Freehold ownership -->
     <div class="rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
       <h3 class="font-semibold text-neutral-800">🗝️ Freehold ownership</h3>
-      <p class="mt-2 text-neutral-600 text-sm">
-        You own your home outright — secure, independent, and yours to keep or pass on.
-      </p>
+      <p class="mt-2 text-neutral-600 text-sm">You own your home outright — secure, independent, and yours to keep or pass on.</p>
     </div>
-
   </div>
 </section>
 
-
 <!-- LOCATION -->
-<section id="location" class="border-t border-neutral-200 bg-white py-16">
+<section id="location" class="scroll-mt-24 border-t border-neutral-200 bg-white py-16">
   <div class="mx-auto max-w-6xl px-4 space-y-10">
-    
-    <!-- Top grid: text + map -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-      
-      <!-- Text -->
       <div>
         <h2 class="text-2xl font-bold">Location</h2>
         <p class="mt-3 text-neutral-700">
@@ -194,86 +164,61 @@
           Close to Wellington yet far from the rush, it’s a place for people who value space, nature, and small-town warmth — 
           all within easy reach of family and everyday essentials.
         </p>
-
-        <!-- Feature badges -->
         <div class="mt-6 flex flex-wrap gap-3">
-          <span class="inline-flex items-center gap-2 rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-700">
-            🌿 Peaceful coastal living
-          </span>
-          <span class="inline-flex items-center gap-2 rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-700">
-            🚗 60 minutes from Wellington
-          </span>
-          <span class="inline-flex items-center gap-2 rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-700">
-            ☕ Nature, cafés & community
-          </span>
+          <span class="inline-flex items-center gap-2 rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-700">🌿 Peaceful coastal living</span>
+          <span class="inline-flex items-center gap-2 rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-700">🚗 60 minutes from Wellington</span>
+          <span class="inline-flex items-center gap-2 rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-700">☕ Nature, cafés & community</span>
         </div>
-
         <p class="mt-3 text-xs text-neutral-500">Indicative location map.</p>
       </div>
 
-      <!-- Map -->
       <div class="overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-50 shadow-sm">
-        <img src="./location-map.png" alt="Location map showing the Club 55 site within the Te Horo corridor"
-             class="w-full h-auto object-contain">
+        <img src="./location-map.png" alt="Location map showing the Club 55 site within the Te Horo corridor" class="w-full h-auto object-contain">
       </div>
     </div>
 
-    <!-- Gallery -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
       <img src="./tehoro-land.jpg" alt="Te Horo land site" class="rounded-xl shadow-sm w-full h-64 object-cover">
       <img src="./otaki-river.jpg" alt="River and native forest near Te Horo" class="rounded-xl shadow-sm w-full h-64 object-cover">
       <img src="./otaki-beach.jpg" alt="Ōtaki Beach at sunset" class="rounded-xl shadow-sm w-full h-64 object-cover">
       <img src="./otaki-cafe.jpg" alt="Local cafés and community life" class="rounded-xl shadow-sm w-full h-64 object-cover">
     </div>
-
   </div>
 </section>
 
 <!-- MASTER PLAN -->
-<section id="masterplan" class="border-t border-neutral-200 bg-neutral-50 py-16">
+<section id="masterplan" class="scroll-mt-24 border-t border-neutral-200 bg-neutral-50 py-16">
   <div class="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-    
     <!-- Image -->
     <div class="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm mx-auto max-w-3xl order-1 md:order-none">
       <img 
-  src="./masterplan.jpg" 
-  alt="Illustrative master plan for Club 55"
-  class="w-full h-auto object-contain cursor-zoom-in"
-  @click="open = true; imageSrc = './masterplan.jpg'"
->
-
+        src="./masterplan.jpg" 
+        alt="Illustrative master plan for Club 55"
+        class="w-full h-auto object-contain cursor-zoom-in"
+        @click="open = true; imageSrc = './masterplan.jpg'">
       <p class="mt-2 text-xs text-neutral-500 text-center">Illustrative master plan. Final design may vary.</p>
     </div>
 
     <!-- Text -->
     <div class="text-left">
-      <!-- Single title (works on all screens) -->
       <h2 class="text-2xl font-bold mb-3">Master plan</h2>
-
       <p class="text-neutral-700">
         A human-scale village where everything’s a short, easy walk. Homes sit on quiet lanes with no-through traffic,
         a central green anchors daily life, and paths connect gardens, the community hub, and shared services.
         It’s designed for independence—low-maintenance, single-level living with plenty of places to meet, move, and breathe.
       </p>
-
-      <!-- Feature badges -->
       <div class="mt-5 flex flex-wrap gap-3">
-        <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-neutral-700 border border-neutral-200">
-          🕒 5-minute “everything” loop
-        </span>
-        <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-neutral-700 border border-neutral-200">
-          🌳 Greenways & community hub
-        </span>
-        <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-neutral-700 border border-neutral-200">
-          🏡 Single-level, low-maintenance homes
-        </span>
+        <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-neutral-700 border border-neutral-200">🕒 5-minute “everything” loop</span>
+        <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-neutral-700 border border-neutral-200">🌳 Greenways & community hub</span>
+        <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-neutral-700 border border-neutral-200">🏡 Single-level, low-maintenance homes</span>
       </div>
     </div>
   </div>
 </section>
 
-  <!-- LIFESTYLE GALLERY -->
-  <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 px-4 max-w-6xl mx-auto">
+<!-- LIFESTYLE GALLERY (separate section, fixed closing) -->
+<section id="lifestyle" class="scroll-mt-24 bg-white py-10">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 max-w-6xl mx-auto">
     <img src="./face-golf.jpg" alt="Golf scene" class="rounded-xl shadow-sm w-full h-64 object-cover">
     <img src="./face-garden.png" alt="Community garden" class="rounded-xl shadow-sm w-full h-64 object-cover">
     <img src="./face-walk.jpg" alt="Pickleball game" class="rounded-xl shadow-sm w-full h-64 object-cover">
@@ -281,12 +226,10 @@
   </div>
 </section>
 
-
 <!-- SAMPLE HOMES -->
-<section id="sample-homes" class="border-t border-neutral-200 bg-white py-16">
+<section id="sample-homes" class="scroll-mt-24 border-t border-neutral-200 bg-white py-16">
   <div class="mx-auto max-w-6xl px-4">
 
-    <!-- INTRO TEXT -->
     <div class="mb-12">
       <h2 class="text-2xl font-bold">Sample homes</h2>
       <p class="mt-3 max-w-3xl text-neutral-700">
@@ -370,25 +313,25 @@
   </div>
 </section>
 
-    <!-- STATUS -->
-  <section id="status" class="border-t border-neutral-200 bg-neutral-50 py-16">
-    <div class="mx-auto max-w-6xl px-4">
-      <h2 class="text-2xl font-bold">Where we’re at</h2>
-      <ul class="mt-4 space-y-3 text-neutral-800">
-        <li class="flex items-start gap-3">✅ Land under contract</li>
-        <li class="flex items-start gap-3">✅ Design intent established</li>
-        <li class="flex items-start gap-3">✅ Now gathering interest from future residents, supporters, and partners</li>
-        <li class="flex items-start gap-3">✅ Next step: prepare Fast Track Approval (FTA) submission</li>
-      </ul>
-      <div class="mt-6 flex flex-wrap items-center gap-4 text-sm text-neutral-600">
-        <span class="inline-flex items-center gap-2">📍 New Zealand</span>
-        <span class="inline-flex items-center gap-2">✉️ Contact: <a class="underline" href="mailto:info@i4c.co.nz">info@i4c.co.nz</a></span>
-      </div>
+<!-- STATUS -->
+<section id="status" class="scroll-mt-24 border-t border-neutral-200 bg-neutral-50 py-16">
+  <div class="mx-auto max-w-6xl px-4">
+    <h2 class="text-2xl font-bold">Where we’re at</h2>
+    <ul class="mt-4 space-y-3 text-neutral-800">
+      <li class="flex items-start gap-3">✅ Land under contract</li>
+      <li class="flex items-start gap-3">✅ Design intent established</li>
+      <li class="flex items-start gap-3">✅ Now gathering interest from future residents, supporters, and partners</li>
+      <li class="flex items-start gap-3">✅ Next step: prepare Fast Track Approval (FTA) submission</li>
+    </ul>
+    <div class="mt-6 flex flex-wrap items-center gap-4 text-sm text-neutral-600">
+      <span class="inline-flex items-center gap-2">📍 New Zealand</span>
+      <span class="inline-flex items-center gap-2">✉️ Contact: <a class="underline" href="mailto:info@i4c.co.nz">info@i4c.co.nz</a></span>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- REGISTER -->
-<section id="register" class="border-t border-neutral-200 bg-white py-16">
+<section id="register" class="scroll-mt-24 border-t border-neutral-200 bg-white py-16">
   <div class="mx-auto max-w-6xl px-4">
     <div class="grid items-center gap-10 md:grid-cols-5">
       
@@ -427,7 +370,7 @@
 
             // Render your Sender form
             sender('forms:render', {
-              formId: 'azpNW7', // <-- replace if your ID is different
+              formId: 'azpNW7',
               container: '#club55-register'
             });
           </script>
@@ -443,36 +386,33 @@
   </div>
 </section>
 
-
-
-
-  <!-- FAQ -->
-  <section id="faq" class="border-t border-neutral-200 bg-neutral-50 py-16">
-    <div class="mx-auto max-w-6xl px-4">
-      <h2 class="text-2xl font-bold">FAQ</h2>
-      <div class="mt-6 grid gap-6 md:grid-cols-2">
-        <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
-          <h3 class="font-semibold">Do I need to pay anything now?</h3>
-          <p class="mt-2 text-neutral-700">No. We’re currently collecting expressions of interest to demonstrate demand and shape the first stage.</p>
-        </div>
-        <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
-          <h3 class="font-semibold">What will weekly costs include?</h3>
-          <p class="mt-2 text-neutral-700">We intend to bundle common expenses (maintenance, shared areas, and rates/insurance where appropriate) to keep costs predictable.</p>
-        </div>
-        <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
-          <h3 class="font-semibold">Where is the site?</h3>
-          <p class="mt-2 text-neutral-700">The land is under contract in New Zealand. Full location details will be shared with registered supporters first as plans firm up.</p>
-        </div>
-        <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
-          <h3 class="font-semibold">What’s the timeline?</h3>
-          <p class="mt-2 text-neutral-700">The next step is preparing a Fast Track Approval (FTA) submission. Your registrations help us move faster.</p>
-        </div>
+<!-- FAQ -->
+<section id="faq" class="scroll-mt-24 border-t border-neutral-200 bg-neutral-50 py-16">
+  <div class="mx-auto max-w-6xl px-4">
+    <h2 class="text-2xl font-bold">FAQ</h2>
+    <div class="mt-6 grid gap-6 md:grid-cols-2">
+      <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
+        <h3 class="font-semibold">Do I need to pay anything now?</h3>
+        <p class="mt-2 text-neutral-700">No. We’re currently collecting expressions of interest to demonstrate demand and shape the first stage.</p>
+      </div>
+      <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
+        <h3 class="font-semibold">What will weekly costs include?</h3>
+        <p class="mt-2 text-neutral-700">We intend to bundle common expenses (maintenance, shared areas, and rates/insurance where appropriate) to keep costs predictable.</p>
+      </div>
+      <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
+        <h3 class="font-semibold">Where is the site?</h3>
+        <p class="mt-2 text-neutral-700">The land is under contract in New Zealand. Full location details will be shared with registered supporters first as plans firm up.</p>
+      </div>
+      <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm">
+        <h3 class="font-semibold">What’s the timeline?</h3>
+        <p class="mt-2 text-neutral-700">The next step is preparing a Fast Track Approval (FTA) submission. Your registrations help us move faster.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- WHO WE ARE -->
-<section id="who" class="bg-teal-900 text-white border-t border-black/10 py-20">
+<section id="who" class="scroll-mt-24 bg-teal-900 text-white border-t border-black/10 py-20">
   <div class="mx-auto max-w-6xl px-4 text-center">
     <h2 class="text-2xl md:text-3xl font-bold text-white">Who we are</h2>
     <p class="mt-4 max-w-3xl mx-auto text-white/90 leading-relaxed">
@@ -487,14 +427,12 @@
   </div>
 </section>
 
-<!-- INVESTOR CALLOUT -->
-<<section id="investors" class="bg-white text-neutral-900 py-16">
+<!-- INVESTOR CALLOUT (fixed malformed tag) -->
+<section id="investors" class="scroll-mt-24 bg-white text-neutral-900 py-16">
   <div class="mx-auto max-w-6xl px-4">
     <div class="rounded-2xl bg-teal-900 p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-10">
-      
-      <!-- Text -->
       <div class="max-w-2xl">
-       <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">Interested in backing the model?</h2>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">Interested in backing the model?</h2>
         <p class="text-white/90 mb-4">
           We’re also open to investors who share the goal of affordable, transparent home ownership.
         </p>
@@ -507,18 +445,30 @@
           Get in touch
         </a>
       </div>
-
-      <!-- Icon -->
       <div class="flex-shrink-0 text-[5rem] font-bold text-white/80 md:pr-6">$</div>
     </div>
   </div>
 </section>
 
-  
+<!-- CONTACT (new so footer link works) -->
+<section id="contact" class="scroll-mt-24 border-t border-neutral-200 bg-white py-16">
+  <div class="mx-auto max-w-6xl px-4">
+    <h2 class="text-2xl font-bold">Contact</h2>
+    <p class="mt-3">Email us at <a class="underline" href="mailto:info@i4c.co.nz">info@i4c.co.nz</a>.</p>
+  </div>
+</section>
+
+<!-- ABOUT (new so footer link works) -->
+<section id="about" class="scroll-mt-24 border-t border-neutral-200 bg-white py-16">
+  <div class="mx-auto max-w-6xl px-4">
+    <h2 class="text-2xl font-bold">About</h2>
+    <p class="mt-3">Club 55 is building fair-priced freehold homes and shared facilities designed for independent living.</p>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer class="bg-neutral-900 text-neutral-300 border-t border-neutral-800">
   <div class="mx-auto max-w-6xl px-4 py-16">
-    
     <div class="text-center">
       <h2 class="text-2xl font-bold text-white">Register your interest today.</h2>
       <p class="mt-3 text-neutral-400">
@@ -538,7 +488,6 @@
         <a href="#about" class="hover:text-white">About</a>
       </div>
     </div>
-
   </div>
 </footer>
 
@@ -547,22 +496,19 @@
   x-show="open"
   x-transition
   class="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
-  @click="open = false"
->
+  @click="open = false">
   <img 
     :src="imageSrc"
     alt="Enlarged image"
-    class="max-h-[90vh] max-w-[90vw] rounded-lg cursor-zoom-out shadow-lg"
-  >
+    class="max-h-[90vh] max-w-[90vw] rounded-lg cursor-zoom-out shadow-lg">
 </div>
 
-  <!-- Privacy popup -->
+<!-- Privacy popup -->
 <div 
   x-show="openPrivacy"
   x-transition
   @click.self="openPrivacy = false"
-  class="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
->
+  class="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
   <div class="bg-white max-w-lg mx-4 rounded-2xl p-6 shadow-lg text-neutral-800 relative">
     <h2 class="text-2xl font-bold mb-3">Privacy Policy</h2>
     <p class="text-sm mb-3">
@@ -576,8 +522,5 @@
   </div>
 </div>
 
-  
 </body>
 </html>
-
-  
