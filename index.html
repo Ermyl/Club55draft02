@@ -1,64 +1,30 @@
-<!-- REGISTER -->
-<section id="register" class="scroll-mt-24 border-t border-neutral-200 bg-white py-16">
-  <div class="mx-auto max-w-6xl px-4">
-    <div class="grid items-center gap-10 md:grid-cols-5">
-      
-      <!-- Left column -->
-      <div class="md:col-span-2">
-        <h2 class="text-2xl font-bold">Be part of the beginning</h2>
-        <p class="mt-3 text-neutral-700">
-          Add your name to help bring Club 55 to life. No payment required — your interest shows demand and helps
-          us move toward approvals.
-        </p>
-        <ul class="mt-4 list-disc space-y-2 pl-6 text-sm text-neutral-700">
-          <li>Your details go directly to our private list (no public display)</li>
-          <li>We’ll email updates and next steps</li>
-        </ul>
-      </div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
 
-      <!-- Right column (Brevo form) -->
-      <div class="md:col-span-3">
-        <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
+  <title>Club 55 – Freehold Homes for Independent Living</title>
 
-          <!-- Brevo form -->
-          <div id="sib-container">
-            <form method="POST" action="https://8c3cb967.sibforms.com/serve/MUIFAKL2DIB7RwhQ6ZpdS90hrgelZ57lxhQStzTJTULNW9KkE3HMX51o4zzjL2gnz_XTt8fJ_gX5nMC8PRMDVqXu2lWPKnLaMdKneNRfs6-RLw23a-sktaIpVUJYq4g2PV0yKHkBD_hxGDbXy62OUZ84UMbaAM9P3kWZnbGPK--AcYbtpStnX8cEXvtQQsFJh2r2oBOhNGNXQv-xDQ==">
-              
-              <label class="block text-sm font-semibold text-neutral-700">Name</label>
-              <input type="text" name="LASTNAME" placeholder="Jane Doe" required
-                     class="w-full mt-1 rounded-md border border-neutral-300 p-2">
+  <meta name="description" content="Club 55 is an active retirement community on the Kāpiti Coast – freehold homes at a fair price, shared facilities, and transparent weekly costs in a neighbourhood that feels like home.">
 
-              <label class="block mt-4 text-sm font-semibold text-neutral-700">Email</label>
-              <input type="email" name="EMAIL" placeholder="you@example.com" required
-                     class="w-full mt-1 rounded-md border border-neutral-300 p-2">
+  <meta property="og:title" content="Club 55 – Freehold Homes for Independent Living">
+  <meta property="og:description" content="A new kind of community for New Zealanders over 55. Compact freehold homes. Shared services. Fair weekly costs.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./website-older.jpg">
 
-              <label class="block mt-4 text-sm font-semibold text-neutral-700">I’m interested in…</label>
-              <div class="mt-1 space-y-1 text-sm">
-                <label><input type="checkbox" name="INTEREST_TA_MERE[]" value="Joining as future resident"> Joining as a future resident</label><br>
-                <label><input type="checkbox" name="INTEREST_TA_MERE[]" value="Learning about investment opportunities"> Investment opportunities</label><br>
-                <label><input type="checkbox" name="INTEREST_TA_MERE[]" value="Staying informed with project updates"> Project updates</label>
-              </div>
-
-              <button type="submit"
-                      class="mt-4 w-full rounded-md bg-neutral-800 py-2 text-white font-semibold hover:bg-neutral-900">
-                Register interest
-              </button>
-
-              <input type="hidden" name="locale" value="en">
-            </form>
-          </div>
-
-          <p class="mt-2 text-xs text-neutral-600">
-            If the form doesn’t load, email us at 
-            <a class="underline" href="mailto:info@i4c.co.nz">info@i4c.co.nz</a>.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2310b981'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='28' fill='white'%3E55%3C/text%3E%3C/svg%3E">
+  
+  <!-- Tailwind and Alpine.js -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
 
 <body x-data="{ open: false, imageSrc: '', openPrivacy: false }" class="bg-neutral-50 text-neutral-900">
 
@@ -118,8 +84,6 @@
     </div>
   </div>
 </section>
-
-
 
 <!-- ============== GREEN TRANSITION STRIP ============== -->
 <section id="intro-strip" class="scroll-mt-24 border-t border-black/10 bg-teal-900 text-white">
