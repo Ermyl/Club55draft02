@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
 
-  <title>Club 55 — Freehold Homes for Independent Living</title>
+  <title>Club 55 – Freehold Homes for Independent Living</title>
 
-  <meta name="description" content="Club 55 is an active retirement community on the Kāpiti Coast — freehold homes at a fair price, shared facilities, and transparent weekly costs in a neighbourhood that feels like home.">
+  <meta name="description" content="Club 55 is an active retirement community on the Kāpiti Coast – freehold homes at a fair price, shared facilities, and transparent weekly costs in a neighbourhood that feels like home.">
 
-  <meta property="og:title" content="Club 55 — Freehold Homes for Independent Living">
+  <meta property="og:title" content="Club 55 – Freehold Homes for Independent Living">
   <meta property="og:description" content="A new kind of community for New Zealanders over 55. Compact freehold homes. Shared services. Fair weekly costs.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="./website-older.jpg">
@@ -19,6 +19,14 @@
   <!-- Tailwind and Alpine.js -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      scroll-margin-top: 80px;
+    }
+  </style>
 </head>
 
 <body x-data="{ open: false, imageSrc: '', openPrivacy: false }" class="bg-neutral-50 text-neutral-900">
@@ -45,12 +53,11 @@
         <a href="#why" class="hover:text-white">Why</a>
         <a href="#location" class="hover:text-white">Location</a>
         <a href="#masterplan" class="hover:text-white">Master plan</a>
-        <a href="#sample-homes" class="hover:text-white">Sample home</a>
-        <a href="#status" class="hover:text-white">Where we’re at</a>
+        <a href="#sample-homes" class="hover:text-white">Sample homes</a>
+        <a href="#status" class="hover:text-white">Where we're at</a>
         <a href="#register" class="hover:text-white">Register</a>
         <a href="#faq" class="hover:text-white">FAQ</a>
       </nav>
-
       <!-- CTA -->
       <a href="#register"
          class="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600">
