@@ -362,25 +362,23 @@
       <div class="md:col-span-3">
         <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
           
-          <!-- Brevo form -->
-          <div x-ignore class="sib-form" style="text-align:center;">
-            <div id="sib-form-container" class="sib-form-container">
-              
-              <!-- Error -->
-              <div id="error-message" class="sib-form-message-panel" style="display:none;">
-                <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                  <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon"><path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"/></svg>
-                  <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
-                </div>
-              </div>
+<!-- Simple Brevo hosted form (safe + zero config) -->
+<div class="rounded-2xl border border-neutral-200 bg-white p-0 overflow-hidden">
+  <iframe
+    src="https://8c3cb967.sibforms.com/serve/MUIFAKL2DIB7RwhQ6ZpdS90hrgelZ57lxhQStzTJTULNW9KkE3HMX51o4zzjL2gnz_XTt8fJ_gX5nMC8PRMDVqXu2lWPKnLaMdKneNRfs6-RLw23a-sktaIpVUJYq4g2PV0yKHkBD_hxGDbXy62OUZ84UMbaAM9P3kWZnbGPK--AcYbtpStnX8cEXvtQQsFJh2r2oBOhNGNXQv-xDQ=="
+    style="width:100%; min-height:760px; border:0;"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Register interest form">
+  </iframe>
+</div>
 
-              <!-- Success -->
-              <div id="success-message" class="sib-form-message-panel" style="display:none;">
-                <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                  <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"/></svg>
-                  <span class="sib-form-message-panel__inner-text">Thanks — you’re on the list.</span>
-                </div>
-              </div>
+<p class="mt-2 text-xs text-neutral-600">
+  Having trouble?
+  <a class="underline" href="https://8c3cb967.sibforms.com/serve/MUIFAKL2DIB7RwhQ6ZpdS90hrgelZ57lxhQStzTJTULNW9KkE3HMX51o4zzjL2gnz_XTt8fJ_gX5nMC8PRMDVqXu2lWPKnLaMdKneNRfs6-RLw23a-sktaIpVUJYq4g2PV0yKHkBD_hxGDbXy62OUZ84UMbaAM9P3kWZnbGPK--AcYbtpStnX8cEXvtQQsFJh2r2oBOhNGNXQv-xDQ==" target="_blank" rel="noopener">
+    Open the form in a new tab
+  </a>.
+</p>
 
               <!-- Form -->
               <div id="sib-container" class="sib-container--large sib-container--vertical" style="background:#fff; max-width:540px; margin:0 auto; border-radius:8px; border:1px solid #C0CCD9;">
