@@ -459,22 +459,6 @@
   </div>
 </section>
 
-<!-- CONTACT (new so footer link works) -->
-<section id="contact" class="scroll-mt-24 border-t border-neutral-200 bg-white py-16">
-  <div class="mx-auto max-w-6xl px-4">
-    <h2 class="text-2xl font-bold">Contact</h2>
-    <p class="mt-3">Email us at <a class="underline" href="mailto:info@i4c.co.nz">info@i4c.co.nz</a>.</p>
-  </div>
-</section>
-
-<!-- ABOUT (new so footer link works) -->
-<section id="about" class="scroll-mt-24 border-t border-neutral-200 bg-white py-16">
-  <div class="mx-auto max-w-6xl px-4">
-    <h2 class="text-2xl font-bold">About</h2>
-    <p class="mt-3">Club 55 is building fair-priced freehold homes and shared facilities designed for independent living.</p>
-  </div>
-</section>
-
 <!-- FOOTER -->
 <footer class="bg-neutral-900 text-neutral-300 border-t border-neutral-800">
   <div class="mx-auto max-w-6xl px-4 py-16">
@@ -492,12 +476,12 @@
     <div class="mt-12 border-t border-neutral-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-500">
       <p>© 2025 Club 55. All rights reserved.</p>
       <div class="flex gap-6">
-        <!-- Contact now opens an email -->
+        <!-- Contact opens email -->
         <a href="mailto:info@i4c.co.nz" class="hover:text-white">Contact</a>
-        <!-- Privacy popup stays the same -->
+        <!-- Privacy popup -->
         <a href="#privacy" @click.prevent="openPrivacy = true" class="hover:text-white">Privacy</a>
-        <!-- About placeholder unchanged -->
-        <a href="#about" class="hover:text-white">About</a>
+        <!-- About scrolls to the 'Who we are' section -->
+        <a href="#who" class="hover:text-white">About</a>
       </div>
     </div>
   </div>
@@ -533,10 +517,6 @@
     </p>
   </div>
 </div>
-
-</body>
-</html>
-
 
 </body>
 </html>
