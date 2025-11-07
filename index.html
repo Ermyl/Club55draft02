@@ -492,8 +492,11 @@
     <div class="mt-12 border-t border-neutral-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-500">
       <p>© 2025 Club 55. All rights reserved.</p>
       <div class="flex gap-6">
-        <a href="#contact" class="hover:text-white">Contact</a>
+        <!-- Contact now opens an email -->
+        <a href="mailto:info@i4c.co.nz" class="hover:text-white">Contact</a>
+        <!-- Privacy popup stays the same -->
         <a href="#privacy" @click.prevent="openPrivacy = true" class="hover:text-white">Privacy</a>
+        <!-- About placeholder unchanged -->
         <a href="#about" class="hover:text-white">About</a>
       </div>
     </div>
@@ -530,6 +533,10 @@
     </p>
   </div>
 </div>
+
+</body>
+</html>
+
 
 </body>
 </html>
