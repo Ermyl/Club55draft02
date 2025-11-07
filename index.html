@@ -413,12 +413,11 @@
           <div id="club55-register"></div>
 
           <script>
-            // Sender form render script
-            (function (s, e, n, d, e_r) {
-              s['Sender'] = e_r;
-              s[e_r] = s[e_r] || function () {
-                (s[e_r].q = s[e_r].q || []).push(arguments)
-              }, s[e_r].l = 1 * new Date();
+            (function (s, e, n, d, er) {
+              s['Sender'] = er;
+              s[er] = s[er] || function () {
+                (s[er].q = s[er].q || []).push(arguments)
+              }, s[er].l = 1 * new Date();
               var a = e.createElement(n),
                 m = e.getElementsByTagName(n)[0];
               a.async = 1;
@@ -426,8 +425,9 @@
               m.parentNode.insertBefore(a, m)
             })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
 
+            // Render your Sender form
             sender('forms:render', {
-              formId: 'azpNW7', // <-- replace with your actual Sender form ID if different
+              formId: 'azpNW7', // <-- replace if your ID is different
               container: '#club55-register'
             });
           </script>
