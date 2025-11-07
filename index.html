@@ -29,17 +29,17 @@
 <body x-data="{ open: false, imageSrc: '', openPrivacy: false }" class="bg-neutral-50 text-neutral-900">
 
 <!-- ================= HERO ================= -->
-<section class="relative">
+<section class="relative z-10"> <!-- add z-10 here -->
   <!-- Background image -->
   <img src="./website-older.jpg"
        alt="Club 55 homes and green spaces"
        class="absolute inset-0 h-full w-full object-cover">
 
-  <!-- Dark overlay for readability (now BEHIND header) -->
+  <!-- Dark overlay for readability -->
   <div class="absolute inset-0 bg-black/40 z-0"></div>
 
   <!-- Header on top of image -->
-  <header class="absolute inset-x-0 top-0 z-10">
+  <header class="absolute inset-x-0 top-0 z-20"> <!-- bump header to z-20 -->
     <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
       <!-- Logo -->
       <a href="#" class="flex items-center gap-2">
@@ -84,6 +84,7 @@
     </div>
   </div>
 </section>
+
 
 
 <!-- ============== GREEN TRANSITION STRIP ============== -->
