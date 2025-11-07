@@ -405,32 +405,19 @@
         </ul>
       </div>
 
-      <!-- Right column (Sender.net form) -->
+      <!-- Right column (Sender.net form via iframe — safest) -->
       <div class="md:col-span-3">
         <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm">
-
-          <!-- Sender.net form embed -->
-          <div id="club55-register"></div>
-
-          <script>
-            (function (s, e, n, d, er) {
-              s['Sender'] = er;
-              s[er] = s[er] || function () {
-                (s[er].q = s[er].q || []).push(arguments)
-              }, s[er].l = 1 * new Date();
-              var a = e.createElement(n),
-                m = e.getElementsByTagName(n)[0];
-              a.async = 1;
-              a.src = d;
-              m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
-
-            // Render your Sender form
-            sender('forms:render', {
-              formId: 'azpNW7', // <-- replace if your ID is different
-              container: '#club55-register'
-            });
-          </script>
+          <div class="overflow-hidden rounded-xl border border-neutral-200 bg-white">
+            <iframe
+              src="https://stats.sender.net/forms/azpNW7/view"
+              title="Register interest"
+              style="width:100%; height:520px; border:0;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              sandbox="allow-forms allow-scripts allow-same-origin allow-popups"
+            ></iframe>
+          </div>
 
           <p class="mt-2 text-xs text-neutral-600">
             If the form doesn’t load, send us a message at 
@@ -442,8 +429,6 @@
     </div>
   </div>
 </section>
-
-
 
 
   <!-- FAQ -->
